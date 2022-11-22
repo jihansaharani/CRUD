@@ -80,7 +80,7 @@ $get = $buku->getData();
         <label>Penerbit</label>
         <input type="text" name="penerbit" id="penerbit" class= "form-control">
         <br>
-        <input type="hidden" id="id_buku" class="form-control" name="">
+        <input type="hidden" id="id_buku" class="form-control" name="id_buku">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -102,7 +102,6 @@ $get = $buku->getData();
             var judul = $(this).data('judul');
             var pengarang = $(this).data('pengarang');
             var penerbit = $(this).data('penerbit');
-            alert(id_buku+judul+pengarang+penerbit);
             
 
             $("#judul").val(judul);
